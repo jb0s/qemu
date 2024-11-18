@@ -63,10 +63,10 @@ enum {
 };
 
 static const USBDescStrings desc_strings = {
-    [STR_MANUFACTURER]     = "QEMU",
-    [STR_PRODUCT_MOUSE]    = "QEMU USB Mouse",
-    [STR_PRODUCT_TABLET]   = "QEMU USB Tablet",
-    [STR_PRODUCT_KEYBOARD] = "QEMU USB Keyboard",
+    [STR_MANUFACTURER]     = "ASUS",
+    [STR_PRODUCT_MOUSE]    = "ASUS USB Mouse",
+    [STR_PRODUCT_TABLET]   = "ASUS USB Tablet",
+    [STR_PRODUCT_KEYBOARD] = "ASUS USB Keyboard",
     [STR_SERIAL_COMPAT]    = "42",
     [STR_CONFIG_MOUSE]     = "HID Mouse",
     [STR_CONFIG_TABLET]    = "HID Tablet",

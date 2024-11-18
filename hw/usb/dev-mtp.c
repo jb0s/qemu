@@ -247,8 +247,8 @@ OBJECT_DECLARE_SIMPLE_TYPE(MTPState, USB_MTP)
 
 /* ----------------------------------------------------------------------- */
 
-#define MTP_MANUFACTURER  "QEMU"
-#define MTP_PRODUCT       "QEMU filesharing"
+#define MTP_MANUFACTURER  "ASUS"
+#define MTP_PRODUCT       "ASUS filesharing"
 #define MTP_WRITE_BUF_SZ  (512 * KiB)
 
 enum {

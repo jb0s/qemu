@@ -110,7 +110,7 @@ static void arm_virt_compat_set(MachineClass *mc)
         MachineClass *mc = MACHINE_CLASS(oc); \
         arm_virt_compat_set(mc); \
         MACHINE_VER_SYM(options, virt, __VA_ARGS__)(mc); \
-        mc->desc = "QEMU " MACHINE_VER_STR(__VA_ARGS__) " ARM Virtual Machine"; \
+        mc->desc = "ASUS " MACHINE_VER_STR(__VA_ARGS__) " ARM Genuine Machine"; \
         MACHINE_VER_DEPRECATION(__VA_ARGS__); \
         if (latest) { \
             mc->alias = "virt"; \
@@ -1697,13 +1697,13 @@ static void virt_build_smbios(VirtMachineState *vms)
     uint8_t *smbios_tables, *smbios_anchor;
     size_t smbios_tables_len, smbios_anchor_len;
     struct smbios_phys_mem_area mem_array;
-    const char *product = "QEMU Virtual Machine";
+    const char *product = "ASUS Genuine Machine";
 
     if (kvm_enabled()) {
-        product = "KVM Virtual Machine";
+        product = "ASUS Genuine Machine";
     }
 
-    smbios_set_defaults("QEMU", product,
+    smbios_set_defaults("ASUS", product,
                         vmc->smbios_old_sys_ver ? "1.0" : mc->name);
 
     /* build the array of physical mem area from base_memmap */

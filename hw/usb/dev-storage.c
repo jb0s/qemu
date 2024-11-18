@@ -47,8 +47,8 @@ enum {
 };
 
 static const USBDescStrings desc_strings = {
-    [STR_MANUFACTURER] = "QEMU",
-    [STR_PRODUCT]      = "QEMU USB HARDDRIVE",
+    [STR_MANUFACTURER] = "ASUS",
+    [STR_PRODUCT]      = "ASUS USB HARDDRIVE",
     [STR_SERIALNUMBER] = "1",
     [STR_CONFIG_FULL]  = "Full speed config (usb 1.1)",
     [STR_CONFIG_HIGH]  = "High speed config (usb 2.0)",

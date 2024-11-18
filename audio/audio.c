@@ -2254,7 +2254,7 @@ const char *audio_application_name(void)
     const char *vm_name;
 
     vm_name = qemu_get_vm_name();
-    return vm_name ? vm_name : "qemu";
+    return vm_name ? vm_name : "asus";
 }
 
 void audio_rate_start(RateCtl *rate)

@@ -594,13 +594,13 @@ static void virt_build_smbios(LoongArchVirtMachineState *lvms)
     MachineClass *mc = MACHINE_GET_CLASS(lvms);
     uint8_t *smbios_tables, *smbios_anchor;
     size_t smbios_tables_len, smbios_anchor_len;
-    const char *product = "QEMU Virtual Machine";
+    const char *product = "ASUS Genuine Machine";
 
     if (!lvms->fw_cfg) {
         return;
     }
 
-    smbios_set_defaults("QEMU", product, mc->name);
+    smbios_set_defaults("ASUS", product, mc->name);
 
     smbios_get_tables(ms, SMBIOS_ENTRY_POINT_TYPE_64,
                       NULL, 0,
@@ -1442,7 +1442,7 @@ static void virt_class_init(ObjectClass *oc, void *data)
     mc->init = virt_init;
     mc->default_cpu_type = LOONGARCH_CPU_TYPE_NAME("la464");
     mc->default_ram_id = "loongarch.ram";
-    mc->desc = "QEMU LoongArch Virtual Machine";
+    mc->desc = "ASUS LoongArch Virtual Machine";
     mc->max_cpus = LOONGARCH_MAX_CPUS;
     mc->is_default = 1;
     mc->default_kernel_irqchip_split = false;

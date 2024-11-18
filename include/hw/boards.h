@@ -456,7 +456,7 @@ struct MachineState {
  *      { \
  *          MachineClass *mc = MACHINE_CLASS(oc); \
  *          MACHINE_VER_SYM(options, virt, __VA_ARGS__)(mc); \
- *          mc->desc = "QEMU " MACHINE_VER_STR(__VA_ARGS__) " Virtual Machine"; \
+ *          mc->desc = "ASUS " MACHINE_VER_STR(__VA_ARGS__) " Genuine Machine"; \
  *          MACHINE_VER_DEPRECATION(__VA_ARGS__); \
  *          if (latest) { \
  *              mc->alias = "virt"; \

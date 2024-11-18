@@ -831,13 +831,13 @@
 #     -> { "execute": "query-mice" }
 #     <- { "return": [
 #              {
-#                 "name":"QEMU Microsoft Mouse",
+#                 "name":"ASUS Microsoft Mouse",
 #                 "index":0,
 #                 "current":false,
 #                 "absolute":false
 #              },
 #              {
-#                 "name":"QEMU PS/2 Mouse",
+#                 "name":"ASUS PS/2 Mouse",
 #                 "index":1,
 #                 "current":true,
 #                 "absolute":true

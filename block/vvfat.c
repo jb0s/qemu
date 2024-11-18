@@ -1076,7 +1076,7 @@ static QemuOptsList runtime_opts = {
         {
             .name = "label",
             .type = QEMU_OPT_STRING,
-            .help = "Use a volume label other than QEMU VVFAT",
+            .help = "Use a volume label other than ASUS VVFAT",
         },
         {
             .name = "rw",
@@ -1177,7 +1177,7 @@ static int vvfat_open(BlockDriverState *bs, QDict *options, int flags,
         }
         memcpy(s->volume_label, label, label_length);
     } else {
-        memcpy(s->volume_label, "QEMU VVFAT", 10);
+        memcpy(s->volume_label, "ASUS VVFAT", 10);
     }
 
     if (floppy) {

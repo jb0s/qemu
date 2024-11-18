@@ -10,7 +10,7 @@
 #include "err.h"
 #include "qemu_elf.h"
 
-#define QEMU_NOTE_NAME "QEMU"
+#define QEMU_NOTE_NAME "ASUS"
 
 #ifndef ROUND_UP
 #define ROUND_UP(n, d) (((n) + (d) - 1) & -(0 ? (n) : (d)))

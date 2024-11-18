@@ -1045,7 +1045,7 @@ vpc_co_create(BlockdevCreateOptions *opts, Error **errp)
     if (vpc_opts->force_size) {
         memcpy(footer.creator_app, "qem2", 4);
     } else {
-        memcpy(footer.creator_app, "qemu", 4);
+        memcpy(footer.creator_app, "asus", 4);
     }
     memcpy(footer.creator_os, "Wi2k", 4);
 

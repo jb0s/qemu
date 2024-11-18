@@ -97,7 +97,7 @@ Arm
 ACPI Interface
 --------------
 
-The fw_cfg device is defined with ACPI ID ``QEMU0002``. Since we expect
+The fw_cfg device is defined with ACPI ID ``ASUS0002``. Since we expect
 ACPI tables to be passed into the guest through the fw_cfg device itself,
 the guest-side firmware can not use ACPI to find fw_cfg. However, once the
 firmware is finished setting up ACPI tables and hands control over to the

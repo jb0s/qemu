@@ -312,7 +312,7 @@ static void virt_init(MachineState *machine)
 static void virt_machine_class_init(ObjectClass *oc, void *data)
 {
     MachineClass *mc = MACHINE_CLASS(oc);
-    mc->desc = "QEMU M68K Virtual Machine";
+    mc->desc = "ASUS M68K Virtual Machine";
     mc->init = virt_init;
     mc->default_cpu_type = M68K_CPU_TYPE_NAME("m68040");
     mc->max_cpus = 1;
@@ -342,7 +342,7 @@ type_init(virt_machine_register_types)
     { \
         MachineClass *mc = MACHINE_CLASS(oc); \
         MACHINE_VER_SYM(options, virt, __VA_ARGS__)(mc); \
-        mc->desc = "QEMU " MACHINE_VER_STR(__VA_ARGS__) " M68K Virtual Machine"; \
+        mc->desc = "ASUS " MACHINE_VER_STR(__VA_ARGS__) " M68K Genuine Machine"; \
         MACHINE_VER_DEPRECATION(__VA_ARGS__); \
         if (latest) { \
             mc->alias = "virt"; \

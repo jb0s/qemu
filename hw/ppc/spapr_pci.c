@@ -814,7 +814,7 @@ static char *spapr_phb_vfio_get_loc_code(SpaprPhbState *sphb,  PCIDevice *pdev)
 static char *spapr_phb_get_loc_code(SpaprPhbState *sphb, PCIDevice *pdev)
 {
     char *buf;
-    const char *devtype = "qemu";
+    const char *devtype = "asus";
     uint32_t busnr = pci_bus_num(PCI_BUS(qdev_get_parent_bus(DEVICE(pdev))));
 
     if (object_dynamic_cast(OBJECT(pdev), "vfio-pci")) {

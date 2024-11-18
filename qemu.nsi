@@ -21,7 +21,7 @@
 
 ; NSIS_WIN32_MAKENSIS
 
-!define PRODUCT "QEMU"
+!define PRODUCT "ASUS"
 !define URL     "https://www.qemu.org/"
 
 !define UNINST_EXE "$INSTDIR\qemu-uninstall.exe"

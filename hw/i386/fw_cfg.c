@@ -73,7 +73,7 @@ void fw_cfg_build_smbios(PCMachineState *pcms, FWCfgState *fw_cfg,
 
     if (pcmc->smbios_defaults) {
         /* These values are guest ABI, do not change */
-        smbios_set_defaults("QEMU", mc->desc, mc->name);
+        smbios_set_defaults("ASUS", mc->desc, mc->name);
     }
 
     /* tell smbios about cpuid version and features */
@@ -226,7 +226,7 @@ void fw_cfg_add_acpi_dsdt(Aml *scope, FWCfgState *fw_cfg)
     Aml *dev = aml_device("FWCF");
     Aml *crs = aml_resource_template();
 
-    aml_append(dev, aml_name_decl("_HID", aml_string("QEMU0002")));
+    aml_append(dev, aml_name_decl("_HID", aml_string("ASUS0002")));
 
     /* device present, functioning, decoding, not shown in UI */
     aml_append(dev, aml_name_decl("_STA", aml_int(0xB)));
