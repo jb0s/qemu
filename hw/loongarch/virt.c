@@ -1442,7 +1442,7 @@ static void virt_class_init(ObjectClass *oc, void *data)
     mc->init = virt_init;
     mc->default_cpu_type = LOONGARCH_CPU_TYPE_NAME("la464");
     mc->default_ram_id = "loongarch.ram";
-    mc->desc = "ASUS LoongArch Virtual Machine";
+    mc->desc = "ASUS LoongArch Genuine Machine";
     mc->max_cpus = LOONGARCH_MAX_CPUS;
     mc->is_default = 1;
     mc->default_kernel_irqchip_split = false;
