@@ -73,9 +73,9 @@ extern bool pci_available;
 #define PCI_DEVICE_ID_INTEL_82801IR      0x2922
 
 /* Red Hat / Qumranet (for QEMU) -- see pci-ids.txt */
-#define PCI_VENDOR_ID_REDHAT_QUMRANET    0x8086
-#define PCI_SUBVENDOR_ID_REDHAT_QUMRANET 0x8086
-#define PCI_SUBDEVICE_ID_QEMU            0x8086
+#define PCI_VENDOR_ID_REDHAT_QUMRANET    0x1af4
+#define PCI_SUBVENDOR_ID_REDHAT_QUMRANET 0x1af4
+#define PCI_SUBDEVICE_ID_QEMU            0x1100
 
 /* legacy virtio-pci devices */
 #define PCI_DEVICE_ID_VIRTIO_NET         0x1000
