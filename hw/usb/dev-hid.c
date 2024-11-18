@@ -806,7 +806,7 @@ static void usb_tablet_class_initfn(ObjectClass *klass, void *data)
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
     uc->realize        = usb_tablet_realize;
-    uc->product_desc   = "QEMU USB Tablet";
+    uc->product_desc   = "ASUS USB Tablet";
     dc->vmsd = &vmstate_usb_ptr;
     device_class_set_props(dc, usb_tablet_properties);
     set_bit(DEVICE_CATEGORY_INPUT, dc->categories);
@@ -829,7 +829,7 @@ static void usb_mouse_class_initfn(ObjectClass *klass, void *data)
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
     uc->realize        = usb_mouse_realize;
-    uc->product_desc   = "QEMU USB Mouse";
+    uc->product_desc   = "ASUS USB Mouse";
     dc->vmsd = &vmstate_usb_ptr;
     device_class_set_props(dc, usb_mouse_properties);
     set_bit(DEVICE_CATEGORY_INPUT, dc->categories);
@@ -853,7 +853,7 @@ static void usb_keyboard_class_initfn(ObjectClass *klass, void *data)
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
     uc->realize        = usb_keyboard_realize;
-    uc->product_desc   = "QEMU USB Keyboard";
+    uc->product_desc   = "ASUS USB Keyboard";
     dc->vmsd = &vmstate_usb_kbd;
     device_class_set_props(dc, usb_keyboard_properties);
     set_bit(DEVICE_CATEGORY_INPUT, dc->categories);

@@ -666,7 +666,7 @@ static void usb_serial_class_initfn(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
-    uc->product_desc   = "QEMU USB Serial";
+    uc->product_desc   = "ASUS USB Serial";
     uc->usb_desc       = &desc_serial;
     device_class_set_props(dc, serial_properties);
 }
@@ -687,7 +687,7 @@ static void usb_braille_class_initfn(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
-    uc->product_desc   = "QEMU USB Braille";
+    uc->product_desc   = "ASUS USB Braille";
     uc->usb_desc       = &desc_braille;
     device_class_set_props(dc, braille_properties);
 }

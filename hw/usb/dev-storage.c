@@ -591,7 +591,7 @@ static void usb_msd_class_initfn_common(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
-    uc->product_desc   = "QEMU USB MSD";
+    uc->product_desc   = "ASUS USB MSD";
     uc->usb_desc       = &desc;
     uc->cancel_packet  = usb_msd_cancel_io;
     uc->handle_attach  = usb_desc_attach;

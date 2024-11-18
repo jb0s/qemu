@@ -2640,7 +2640,7 @@ int ide_init_drive(IDEState *s, IDEDevice *dev, IDEDriveKind kind, Error **errp)
         pstrcpy(s->drive_serial_str, sizeof(s->drive_serial_str), dev->serial);
     } else {
         snprintf(s->drive_serial_str, sizeof(s->drive_serial_str),
-                 "QM%05d", s->drive_serial);
+                 "%05d", s->drive_serial);
     }
     if (dev->model) {
         pstrcpy(s->drive_model_str, sizeof(s->drive_model_str), dev->model);

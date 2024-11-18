@@ -106,7 +106,7 @@ enum {
 static const USBDescStrings desc_strings = {
     [STR_MANUFACTURER] = "ASUS",
     [STR_PRODUCT]      = "ASUS USB Hub",
-    [STR_SERIALNUMBER] = "314159",
+    [STR_SERIALNUMBER] = "173817",
 };
 
 static const USBDescIface desc_iface_hub = {
@@ -676,7 +676,7 @@ static void usb_hub_class_initfn(ObjectClass *klass, void *data)
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
     uc->realize        = usb_hub_realize;
-    uc->product_desc   = "QEMU USB Hub";
+    uc->product_desc   = "ASUS USB Hub";
     uc->usb_desc       = &desc_hub;
     uc->find_device    = usb_hub_find_device;
     uc->handle_reset   = usb_hub_handle_reset;

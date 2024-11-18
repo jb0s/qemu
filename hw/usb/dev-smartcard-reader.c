@@ -80,10 +80,10 @@ OBJECT_DECLARE_SIMPLE_TYPE(USBCCIDState, USB_CCID_DEV)
 #define CCID_CONTROL_GET_CLOCK_FREQUENCIES  0x2
 #define CCID_CONTROL_GET_DATA_RATES         0x3
 
-#define CCID_PRODUCT_DESCRIPTION        "QEMU USB CCID"
-#define CCID_VENDOR_DESCRIPTION         "QEMU"
+#define CCID_PRODUCT_DESCRIPTION        "ASUS USB CCID"
+#define CCID_VENDOR_DESCRIPTION         "ASUS"
 #define CCID_INTERFACE_NAME             "CCID Interface"
-#define CCID_SERIAL_NUMBER_STRING       "1"
+#define CCID_SERIAL_NUMBER_STRING       "1738173817381738"
 /*
  * Using Gemplus Vendor and Product id
  * Effect on various drivers:
@@ -1443,7 +1443,7 @@ static void ccid_class_initfn(ObjectClass *klass, void *data)
     HotplugHandlerClass *hc = HOTPLUG_HANDLER_CLASS(klass);
 
     uc->realize        = ccid_realize;
-    uc->product_desc   = "QEMU USB CCID";
+    uc->product_desc   = "ASUS USB CCID";
     uc->usb_desc       = &desc_ccid;
     uc->handle_reset   = ccid_handle_reset;
     uc->handle_control = ccid_handle_control;
